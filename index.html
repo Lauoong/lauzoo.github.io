@@ -5,6 +5,41 @@
 <title>The world of Lauoong</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <style>
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 480px 时, 让每栏上下堆叠显示 */
+@media screen and (max-width: 480px) {
+    .row {   
+        flex-direction: column;
+		}
+	.side {
+		width:100%;
+		height: auto;
+		background-size: cover;
+		
+    }
+	.main {
+		width:100%;
+		height: auto;
+		background-size: cover;
+		}
+	.three {
+		width:100%;
+		height: auto;
+		background-size: cover;}
+	
+	
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目高度不变向左靠 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: left;
+        width: auto;
+		height: 100%;
+    }
+
+}
+</style>
 </head>
 <body>
 
